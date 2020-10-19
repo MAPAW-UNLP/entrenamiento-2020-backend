@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ BACKEND REST API - ENTRENAMIENTO 
 
-Things you may want to cover:
 
-* Ruby version
+Usa una base de datos postgresql 
+   Nombres de las bases de datos:
+           entrenamiento_development
+	   entrenamiento_test
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+* Ruby 2.7
+* Rails 6
+* Postgresql 11
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
