@@ -1,0 +1,2 @@
+class EjercicioEnPlan < ApplicationRecord
+end

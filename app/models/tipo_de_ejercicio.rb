@@ -1,0 +1,2 @@
+class TipoDeEjercicio < ApplicationRecord
+end
