@@ -76,11 +76,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+   production:
+     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: restapi_production
-  username: restapi
-  password: <%= ENV['RESTAPI_DATABASE_PASSWORD'] %>
+#production:
+#  <<: *default
+#  database: restapi_production
+#  username: restapi
+#  password: <%= ENV['RESTAPI_DATABASE_PASSWORD'] %>
