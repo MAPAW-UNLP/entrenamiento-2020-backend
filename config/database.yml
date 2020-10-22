@@ -14,16 +14,16 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-default: &default
+development: &default
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  #development:
-  #<<: *default
-  #database: entrenamiento_development
+  development:
+    <<: *default
+    database: entrenamiento_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -71,17 +71,17 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-        DATABASE_URL="postgres://ymluqoxeqxqtet:3ea240f24b81a7f688903bd5059043d53278b047f8e46faf51bcac1b5505ebbf@ec2-3-217-87-84.compute-1.amazonaws.com:5432/dcr2rqmp04pk2k"
+     #   DATABASE_URL="postgres://ymluqoxeqxqtet:3ea240f24b81a7f688903bd5059043d53278b047f8e46faf51bcac1b5505ebbf@ec2-3-217-87-84.compute-1.amazonaws.com:5432/dcr2rqmp04pk2k"
 
 #
 # You can use this database configuration with:
 #
-production:
-  <<: *default      
-  url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
+#   url: <%= ENV['DATABASE_URL'] %>
 #
-#production:
-#  <<: *default
-#  database: restapi_production
-#  username: restapi
-#  password: <%= ENV['RESTAPI_DATABASE_PASSWORD'] %>
+production:
+  <<: *default
+  database: restapi_production
+  username: restapi
+  password: <%= ENV['RESTAPI_DATABASE_PASSWORD'] %>
