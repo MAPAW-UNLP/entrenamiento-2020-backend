@@ -78,6 +78,7 @@ heroku: &heroku
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: dcr2rqmp04pk2k
   username: ymluqoxeqxqtet
   password: 3ea240f24b81a7f688903bd5059043d53278b047f8e46faf51bcac1b5505ebbf 
 
