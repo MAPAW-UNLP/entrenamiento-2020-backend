@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: postgres
+  database: dcr2rqmp04pk2k
   username: ymluqoxeqxqtet
   password: 3ea240f24b81a7f688903bd5059043d53278b047f8e46faf51bcac1b5505ebbf
