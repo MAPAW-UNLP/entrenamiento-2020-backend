@@ -73,7 +73,7 @@ test:
 heroku: &heroku
   adapter: postgresql
   encoding: unicode
-  host: c2-3-217-87-84.compute-1.amazonaws.com
+  host: ec2-3-217-87-84.compute-1.amazonaws.com
   port: 5432
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
